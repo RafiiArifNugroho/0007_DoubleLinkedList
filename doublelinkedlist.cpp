@@ -59,6 +59,10 @@ public:
                 // step 9
                 newMode->next = current->next;
                 newMode->prev = current;
+
+                // insert last node
+                if (current->next != NULL)
+                    current->->prev = newNode;
             }
 
         )
