@@ -42,6 +42,15 @@ public:
                     START->prev = NULL;
                 // srep 6
                 newNode->prev = NULL;
+                // step 7
+                START = newMode;
+                return;
+
+                Node *current = START;
+                while (current->next != NULL && nim == current->next->noMhs < nim)
+                {
+                    current = current->next;
+                }
             }
 
         )
