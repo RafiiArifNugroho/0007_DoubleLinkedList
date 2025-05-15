@@ -51,6 +51,14 @@ public:
                 {
                     current = current->next;
                 }
+                if (current->next != NULL && nim == current->noMhs)
+                {
+                    cout << "\nDuplicate roll number notallowed" << endl;
+                }
+
+                // step 9
+                newMode->next = current->next;
+                newMode->prev = current;
             }
 
         )
