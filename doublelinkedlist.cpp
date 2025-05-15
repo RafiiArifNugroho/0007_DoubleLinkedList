@@ -40,6 +40,8 @@ public:
                 // step 5
                 if (START != NULL)
                     START->prev = NULL;
+                // srep 6
+                newNode->prev = NULL;
             }
 
         )
