@@ -63,6 +63,23 @@ public:
                 // insert last node
                 if (current->next != NULL)
                     current->->prev = newNode;
+
+                current->next = newNode;
+            } void hapus() {
+                if (START == NULL)
+                {
+                    cout << "\n.List is empty" << endl;
+                    return;
+                }
+                cout << "\nEnter Number you want to delete: ";
+                int rolNo;
+                cin >> rolNo;
+
+                Node *current = START;
+                while (current != NULL && current->noMhs != rolNo)
+                {
+                    current = current->next;
+                }
             }
 
         )
