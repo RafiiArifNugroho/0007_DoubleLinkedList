@@ -39,6 +39,7 @@ public:
                 newMode->next = START;
                 // step 5
                 if (START != NULL)
+                    START->prev = NULL;
             }
 
         )
